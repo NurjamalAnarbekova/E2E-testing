@@ -3,7 +3,7 @@ describe("My Login application", () => {
     await browser.url(`https://the-internet.herokuapp.com/login`);
   });
 
-  it("enter data ", async () => {
+  it("open page", async () => {
     await $("#username").setValue("tomsmith");
     await $("#password").setValue("SuperSecretPassword!");
     await $('button[type="submit"]').click();
